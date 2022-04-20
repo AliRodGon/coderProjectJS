@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú a domicilio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Mukta:wght@300&family=Nunito+Sans:ital,wght@0,300;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Dosis:wght@700&family=Libre+Franklin:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Nunito+Sans:ital,wght@0,300;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+
+<body>
+
+<div id="procesoDePedido">
+    <div id="header" class="main-header">
+        <h1 id="principal">ToGo Menú</h1>
+        <h3>De nuestra cocina a tu casa sin pedido mínimo</h3>
+</div>
+
+<div id="form1" class="form">
+    <p>¿Ya tienes cuenta con nosotros?</p>
+    <p>Ingresa y podrás ver tus últimos pedidos:</p>
+    <form action="" method="" name="userForm" >
+        <label  class="label" for="user">Nombre:</label><br>
+        <input id="user" class="input" type="text" name="user" placeholder="Introduce tu nombre" required/><br>
+
+        <label  class="label" for="email">email:</label><br>
+        <input id="email" class="input" type="email" name="email" required/><br>
+
+        <label class="label" for="password">contrasena:</label><br>
+        <input id="password" class="input" type="password" name="password" required/>
+        
+        <input id="submitClass" class="submit" type="submit" value="Submit">
+    </form>
+</div>
+
+<div id="saludo-user"></div>
+
+<div class="main-container"></div>
+
+<div id="nutriInfo">
+    <div class="form-nutri">
+        <form action="">
+            <h2 class="headline-tarjeta">¿Te preocupa tu alimentación?</h2>
+            <p class="parrafo">Aquí puedes buscar la información nutricional de nuestros platos (¡o de otros que te quieras conocer!)
+            Sólo recuerda que el buscador admite algunos términos en español, pero en su mayoría está en lengua inglesa.</p>
+                <label class="label" for="platoInfo"></label>
+                <input class="input" type="text" id="platoInfo">
+                <button class="submit" type="button" id="infoNutricional">BUSCAR</button>
+                <button class="submit" type="button" id="limpiarInfo">LIMPIAR</button>
+        </form>
+    </div>
+    <div id="tarjetaContainer" class="row px-5 pt-5">
+        
+    </div>
+</div>
+
+
+<div id="cardContainer" class="row px-5 pt-5" ></div> 
+
+<div id="cardContainer2" class="row px-5 pt-5" ></div>
+     
+
+<div id="cambiarVisibilidadBoton">
+    <button id="pagar" type="button" class="btn btn-dark btn-lg w-100" name="add-button">Pagar</button>
+</div>
+<div id="precio_final"></div>
+<div id="confirmar_pago"></div>
+</div>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+    <script src="/apiFetch.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+</html>
