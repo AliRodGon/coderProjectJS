@@ -1,0 +1,377 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Mukta:wght@300&family=Nunito+Sans:ital,wght@0,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Fredoka:wght@500&family=Mukta:wght@300&family=Nunito+Sans:ital,wght@0,300;1,700&display=swap');
+
+
+
+*{
+  font-family: "Dosis", sans-serif;
+  
+  box-sizing: border-box;
+}
+
+
+.main-header {
+  background-color: rgb(2, 151, 250);
+  padding-bottom: 1.2rem;
+  margin: 0.3rem;
+  border-radius: 10px;
+}
+
+h3 {
+  color: rgb(251, 251, 251);
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+}
+
+.form{
+  font-family: 'Mukta', sans-serif;
+  color:rgb(59, 59, 59);
+  padding-left: 2rem;
+  padding-top: 1rem;
+  font-size: 1.5rem !important;
+}
+.label {
+  font-family: 'Mukta', sans-serif;
+  color:rgb(59, 59, 59);
+  padding-top: 0.05rem;
+  margin-bottom: none;
+}
+.submit{
+  border-radius: 5px;
+}
+.submit:hover{
+  background-color: rgb(252, 241, 27);
+  color: rgb(2, 151, 250);
+}
+
+.input {
+  border-radius: 5px;
+  margin: none;
+}
+
+h1 {
+  width: 100%;
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+  font-size: 4rem;
+  color: rgba(252, 241, 27);
+  margin: none;
+  background-color: rgb(2, 151, 250);
+  box-shadow: ivory;
+  padding-bottom: 0.5rem;
+}
+
+body {
+  background: rgba(255, 255, 255, 0.988)
+}
+
+#ultimo-pedido{
+ margin-left: 3rem;
+ border-radius: 10px;
+ color: rgba(252, 241, 27);
+ width: 30%;
+
+}
+
+#element2{
+  display: block;
+} 
+.individual-card {
+  width: 15rem;
+  background-color: white;
+  
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.442);
+  margin: 1rem;
+  border-radius: 15px;
+  display: grid;
+}
+
+.imageDishes {
+  border-radius: 25px;
+  background-color: white;
+  width:100%;
+  height: auto;
+  justify-self: center;
+  padding: 0.75rem;
+}
+
+.card.product .btn {
+  bottom: 1.5rem;
+  max-width: 80%;
+  margin: 0.3rem
+}
+
+.price {
+  font-size: 1.75rem;
+}
+
+.cardContainer .cardContainer2 {
+  margin-left: 25%;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    margin-bottom: 2rem;
+  }
+}
+
+p {
+  font-size: 2rem;
+}
+
+.saludo {
+  font-family: 'Mukta', sans-serif;
+  font-size: 3rem;
+  margin-left: 3rem;
+}
+
+#confirmarPago {
+  color:white;
+}
+
+.card-body{
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+
+/* //SWAL */
+.swal-overlay {
+  background-color: rgba(2, 151, 250, 0.383);
+  border: 3px solid rgba(2, 151, 250);
+}
+
+.swal-modal {
+  background-color: rgba(255, 237, 71);
+  border: 3px solid rgba(2, 151, 250);
+}
+
+.swal-button {
+  background-color: rgba(255, 237, 71);
+  border: 3px solid rgba(2, 151, 250);
+  color: #333; 
+}
+
+/* TARJETA PAGO*/
+.container{
+  min-height: 100vh;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-bottom: 60px;
+}
+
+.container form{
+  background: rgba(2, 151, 250, 0.383);
+  border: 3px solid rgba(2, 151, 250);
+  border-radius: 5px;
+  box-shadow: 0 10px 15px rgba(3, 253, 220, 0.1);
+  padding: 20px;
+  width: 600px;
+  padding-top: 160px;
+}
+
+.container form .inputBox{
+  margin-top: 20px;
+}
+
+.container form .inputBox span{
+  display: block;
+  color:rgb(12, 12, 12);
+  padding-bottom: 5px;
+}
+
+.container form .inputBox input,
+.container form .inputBox select{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border:1px solid rgba(249, 171, 47, 0.3);
+  color:(249, 171, 47, 0.3);
+}
+
+.container form .flexbox{
+  display: flex;
+  gap:15px;
+}
+
+.container form .flexbox .inputBox{
+  flex:1 1 150px;
+}
+
+.container form .submit-btn{
+  width: 100%;
+  background-color: rgb(252, 197, 0);
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  color:rgb(44, 39, 39);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .2s linear;
+}
+
+.container form .submit-btn:hover{
+  background-color: rgba(2, 151, 250);
+  letter-spacing: 2px;
+  font-weight: bolder;
+  opacity: 1.8;
+}
+
+.container .card-container{
+  margin-bottom: -150px;
+  position: relative;
+  height: 250px;
+  width: 400px;
+}
+
+.container .card-container .front{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0; left: 0;
+  background:linear-gradient(45deg, rgb(2, 151, 250), rgb(0, 61, 145));
+  border-radius: 5px;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0,0,0,.2);
+  padding:20px;
+  transform:perspective(1000px) rotateY(0deg);
+  transition:transform .4s ease-out;
+}
+
+.container .card-container .front .image{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.container .card-container .front .image img{
+  height: 50px;
+}
+
+.container .card-container .front .card-number-box{
+  padding:30px 0;
+  font-size: 22px;
+  color:#fff;
+}
+
+.container .card-container .front .flexbox{
+  display: flex;
+}
+
+.container .card-container .front .flexbox .box:nth-child(1){
+  margin-right: auto;
+}
+
+.container .card-container .front .flexbox .box{
+  font-size: 15px;
+  color:#fff;
+}
+
+.container .card-container .back{
+  position: absolute;
+  top:0; left: 0;
+  height: 100%;
+  width: 100%;
+  background:linear-gradient(45deg, rgb(2, 151, 250), rgb(0, 61, 145));
+  border-radius: 5px;
+  padding: 20px 0;
+  text-align: right;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0,0,0,.2);
+  transform:perspective(1000px) rotateY(180deg);
+  transition:transform .4s ease-out;
+}
+
+.container .card-container .back .stripe{
+  background: #000;
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+}
+
+.container .card-container .back .box{
+  padding: 0 20px;
+}
+
+.container .card-container .back .box span{
+  color:#fff;
+  font-size: 15px;
+}
+
+.container .card-container .back .box .cvv-box{
+  height: 50px;
+  padding: 10px;
+  margin-top: 5px;
+  color:#333;
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.container .card-container .back .box img{
+  margin-top: 30px;
+  height: 30px;
+}
+
+
+/* //DATOS NUTRICIONALES */
+
+.form-nutri {
+ 
+  margin-left: 1rem;
+  background-color: rgb(219, 226, 232);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 10px;
+}
+
+
+
+
+
+.nutriInfo{
+  display: flex;
+}
+
+#tarjetaContainer{
+  display: flex;
+  justify-content: space-evenly;
+}
+.tarjetaIndividual{
+  display: flex;
+  flex-direction: column;
+  border: solid rgba(2, 151, 250, 0.863);
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+.titleTarjeta {
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color:#000;
+}
+
+
+p.info{
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.5rem;
+  color:#000;
+  padding-left: 1.5rem;
+}
+
+.headline-tarjeta{
+  font-family: 'Mukta', sans-serif;
+  font-size: 2.5rem;
+  color:#000;
+}
